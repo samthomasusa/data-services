@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Accessibility Companies: Can AI Output Pass a Screen Reader Test?</title>
+  <meta name="description" content="DOJ says generative AI can't yet reliably remediate inaccessible content at scale. Learn how to evaluate PDF accessibility companies using screen reader testing and triage.">
+  <link rel="canonical" href="https://samthomasusa.github.io/data-services/pdf-accessibility-companies-screen-reader-test/">
+  <style>
+    body { max-width: 760px; margin: 0 auto; padding: 24px 16px; font-family: Georgia, serif; font-size: 18px; line-height: 1.7; color: #222; }
+    h1 { font-size: 34px; line-height: 1.3; }
+    h2 { font-size: 26px; margin-top: 40px; }
+    li { margin-bottom: 8px; }
+    a { color: #0056b3; }
+  </style>
+</head>
+<body>
+<article>
+
+<h1>Can PDF Accessibility Companies Prove Their AI Output Works for Screen Reader Users?</h1>
+
+<p>Public agencies, universities, healthcare systems, and businesses that serve them hold enormous libraries of PDFs: forms, reports, meeting minutes, policies, brochures, and statements. Under the Justice Department’s 2024 rule for state and local governments, web content and documents must meet the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. Many organizations have turned to <a href="https://www.damcogroup.com/REPLACE-WITH-YOUR-PDF-ACCESSIBILITY-PAGE">PDF accessibility companies</a> to bring those libraries into compliance, and many of those vendors now lead with AI.</p>
+
+<p>The pitch is appealing. Upload thousands of documents, let a model tag headings, tables, and images, and receive compliant files in days at a low price per page. The trouble is that compliance checkers and screen reader users ask different questions. A file can pass an automated check and still be confusing or unusable for someone navigating it by ear.</p>
+
+<p>The Justice Department has put that problem on the record. In the April 2026 interim final rule that extended Title II deadlines, it stated that generative AI does not yet reliably automate the remediation of inaccessible content at scale. That finding should change how buyers compare PDF accessibility companies: the test is whether output works for screen reader users, and whether the vendor helps decide which documents deserve remediation at all.</p>
+
+<h2>What the April 2026 Rule Changed</h2>
+
+<p>The Justice Department’s interim final rule, published April 20, 2026, extended the compliance dates in its 2024 web and mobile accessibility rule by one year. Public entities with a total population of 50,000 or more now have until April 26, 2027. Smaller public entities and special district governments have until April 26, 2028. The rule does not change the substantive requirements, and WCAG 2.1 Level AA remains the technical standard.</p>
+
+<p>The Department explained that it had overestimated covered entities’ capabilities in staffing and in technology. It stated that advanced technology such as generative AI does not yet reliably automate remediation of inaccessible content at scale, and that the less entities can rely on technology, the more they must rely on manual work. It also noted that entities have been generating substantial amounts of potentially inaccessible content with generative AI.</p>
+
+<p>The extension gives organizations more time. It does not lower the bar. Buyers who spend the extra year on fast, unverified remediation will reach the new deadline with libraries that look compliant on paper and fail in use.</p>
+
+<h2>Why Automated Checks Are Not Enough</h2>
+
+<p>Accessibility checkers test for the presence of structure: tags, alternative text fields, document language, bookmarks. They cannot judge whether that structure is right. A table may be tagged as a table, yet have header cells marked incorrectly, so a screen reader announces the wrong column names. An image may have alternative text, yet the text may say “chart” instead of describing the data. Reading order may be technically defined, yet jump from a sidebar into the middle of a paragraph.</p>
+
+<p>These are exactly the areas where AI tagging tends to struggle:</p>
+
+<ul>
+  <li>Complex tables with merged cells, multiple header rows, or nested structure</li>
+  <li>Forms that need correct field labels, tooltips, and tab order</li>
+  <li>Charts and infographics that need meaningful descriptions of the data, not just of the image</li>
+  <li>Reading order in multi-column layouts, callouts, and footnotes</li>
+  <li>Mathematical and scientific notation, which the rule’s record notes is especially hard to automate</li>
+  <li>Decorative versus meaningful images, which require judgment about context</li>
+</ul>
+
+<p>The wider web shows how common basic failures remain. The WebAIM Million analysis for 2026 found detectable WCAG failures on 95.9% of the top one million home pages, with an average of 56.1 errors per page, up from 51 the year before. Documents linked from those pages are often in worse shape.</p>
+
+<h2>What Screen-Reader-Tested Output Means</h2>
+
+<p>Screen reader testing means a qualified tester opens the remediated document with assistive technology, such as JAWS, NVDA, or VoiceOver, and uses it the way a blind or low-vision person would. The tester checks that:</p>
+
+<ul>
+  <li>Headings provide a logical outline that allows quick navigation.</li>
+  <li>Reading order matches the visual and logical order of the content.</li>
+  <li>Tables announce correct headers for each cell.</li>
+  <li>Images and charts are described meaningfully, and decorative images are ignored.</li>
+  <li>Links and buttons have clear names.</li>
+  <li>Forms can be completed with a keyboard, with labels and instructions announced.</li>
+  <li>Language, title, and document properties are set correctly.</li>
+</ul>
+
+<p>Testing should cover a meaningful sample of every document type, with 100% testing for high-impact documents such as forms, applications, and notices that people must act on.</p>
+
+<h2>Triage Comes Before Remediation</h2>
+
+<p>The most valuable service a PDF accessibility company can provide may be advice on what not to remediate. Many document libraries contain years of outdated material that nobody reads. Remediating all of it is expensive and often unnecessary.</p>
+
+<p>A sound triage process sorts documents into four groups:</p>
+
+<ul>
+  <li><strong>Remediate:</strong> current, high-use documents that must remain PDFs, such as official forms or signed reports.</li>
+  <li><strong>Convert:</strong> content that works better as accessible web pages, such as policies, guides, and FAQs. HTML is often easier to make and keep accessible than PDF.</li>
+  <li><strong>Archive:</strong> older documents kept for reference, moved to a clearly marked archive with a process for providing accessible versions on request, where the rule’s exceptions allow.</li>
+  <li><strong>Retire:</strong> duplicates, outdated versions, and content with no ongoing purpose, removed entirely.</li>
+</ul>
+
+<p>Triage typically shrinks the remediation workload substantially and lets the budget go further on documents that matter. Ask vendors to show how they triage, what criteria they use, and how they document decisions in case they are questioned later.</p>
+
+<h2>A Representative Triage</h2>
+
+<p>Consider a county government with about 18,000 PDFs across its website. An inventory finds that roughly 6,000 are agendas, minutes, and notices more than five years old, with almost no traffic. Another 4,000 are duplicates or superseded versions. About 5,000 are policies, guides, and informational pages that would work better as web pages. The remaining 3,000 are current forms, reports, and official documents that must stay as PDFs.</p>
+
+<p>With triage, the county retires the duplicates and superseded versions, moves the older material to a clearly labeled archive with an accessible-copy-on-request process where the rule’s exceptions permit, converts the informational documents to accessible HTML over time, and focuses full remediation and screen reader testing on the 3,000 documents people actually need. The remediation workload falls by more than 80%, and the budget that would have been spread thinly across 18,000 files goes into getting 3,000 right.</p>
+
+<p>Without triage, the same budget buys fast, lightly reviewed AI remediation of every file, including thousands that nobody opens. The checker reports look complete. The forms residents rely on may still fail when someone tries to complete them with a screen reader.</p>
+
+<h2>What a Good Conformance Report Contains</h2>
+
+<p>Every remediated document should come with evidence. A useful conformance report records the document name and version, the WCAG 2.1 success criteria tested, the automated tools used, the screen readers and browsers used for manual testing, the tester’s name or identifier, the date, any known exceptions with reasons, and the remediation steps taken. Reports like this support complaint responses and audits, and they make it possible to re-test efficiently when documents are updated.</p>
+
+<h2>How to Evaluate PDF Accessibility Companies</h2>
+
+<p>Price per page and turnaround time are easy to compare and misleading on their own. A practical evaluation includes:</p>
+
+<ul>
+  <li><strong>A blind sample test.</strong> Send each vendor the same set of difficult documents: a complex table, a fillable form, a report with charts, and a multi-column brochure. Have an independent tester or an internal accessibility specialist review the results with a screen reader.</li>
+  <li><strong>Process transparency.</strong> Ask how much of the work is automated, how much is manual, and who reviews the output. Ask what qualifications the testers have and which assistive technologies they use.</li>
+  <li><strong>Quality guarantees.</strong> Ask what the vendor will do if a remediated document fails a screen reader test after delivery, and how quickly it will fix it.</li>
+  <li><strong>Triage capability.</strong> Ask for a sample triage report on a portion of your library.</li>
+  <li><strong>Reporting.</strong> Ask for per-document conformance reports that record what was tested, with which tools, and by whom.</li>
+</ul>
+
+<p>PDF accessibility services that pass this evaluation usually cost more per page than AI-only offerings. They also hold up when a user complains or an auditor checks.</p>
+
+<h2>Using AI Responsibly in Remediation</h2>
+
+<p>AI is useful in this work. It speeds up initial tagging, suggests alternative text for review, detects headings, and flags likely problems. The risk lies in relying on it without verification. The Justice Department’s finding reflects the current state of the technology at scale.</p>
+
+<p>A responsible PDF accessibility company uses AI for first-pass work, routes output to trained specialists who correct it, and verifies the result with assistive technology. It is open about that workflow and can show the human review steps.</p>
+
+<h2>Keeping New Documents Accessible</h2>
+
+<p>Remediation fixes the backlog. New documents keep arriving. The fastest way to reduce ongoing cost is to create accessible documents at the source: templates with correct heading styles, authoring guidance for tables and images, accessible export settings, and training for staff who publish content. Document accessibility services that include template work and training help prevent the backlog from growing again.</p>
+
+<p>Set a publishing rule as well: no new PDF goes live until it passes an automated check and, for forms and high-traffic documents, a quick screen reader review. Assign a named reviewer in each department that publishes documents, and track exceptions in one place. Small habits at the point of publication cost far less than another remediation project in two years.</p>
+
+<p>Generative AI content needs the same attention. If teams use AI tools to produce reports or summaries, the output should pass through the same accessibility checks as any other document.</p>
+
+<h2>Legal Exposure and Practical Risk</h2>
+
+<p>Beyond Title II, businesses face accessibility expectations under Title III of the ADA, Section 504 and Section 508 for federally funded and federal contexts, state laws, and, for organizations serving Europe, the European Accessibility Act. Complaints and lawsuits frequently cite inaccessible documents. A remediation program built on screen reader testing and clear triage records is far easier to defend than one built on checker reports alone.</p>
+
+<h2>Conclusion</h2>
+
+<p>The Justice Department has stated plainly that generative AI cannot yet reliably remediate inaccessible content at scale, and its April 2027 and 2028 deadlines still require WCAG 2.1 AA. When comparing PDF accessibility companies, organizations should look at the quality of their remediated documents, their human review processes, and their ability to test output with screen readers. Document triage and detailed conformance reports should also be part of the evaluation.</p>
+
+<p>AI can make remediation faster, but speed alone does not establish accessibility. Organizations need vendors that can show how their processes work and provide evidence that people using assistive technology can navigate and understand the final documents. The extended compliance period offers time to build that capability. How organizations use that time will determine whether their PDF libraries become genuinely accessible or simply appear compliant in automated reports.</p>
+
+</article>
+</body>
+</html>
